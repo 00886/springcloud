@@ -16,4 +16,4 @@ feign:
   hystrix:
     enabled: true
 
-#http://localhost:8081/hystrix  熔断监测
+#http://localhost:8081/hystrix  熔断监测1
