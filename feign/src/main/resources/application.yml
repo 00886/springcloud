@@ -1,0 +1,19 @@
+eureka:
+  instance:
+    hostname: ${spring.cloud.client.ip-address}
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8081
+spring:
+  application:
+    name: feign
+
+#开启熔断器
+feign:
+  hystrix:
+    enabled: true
+
+#http://localhost:8081/hystrix  熔断监测
